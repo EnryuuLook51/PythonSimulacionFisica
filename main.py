@@ -12,10 +12,9 @@ from utils import imprimir_inicio
 # Definir demo en el ámbito global
 demo = crear_interface()
 
-if __name__ == "__main__":
-    # Si se ejecuta localmente, lanza el servidor en el puerto especificado
-    port = int(os.environ.get("PORT", 7860))
-    demo.launch(server_name="0.0.0.0", server_port=port)
+# Lanzar el servidor en el puerto asignado por Render
+port = int(os.environ.get("PORT", 7860))
+demo.launch(server_name="0.0.0.0", server_port=port)
 
 def main():
     """
