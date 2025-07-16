@@ -9,9 +9,12 @@ from calculos_fisica import simular_colision
 from interfaz_gradio import crear_interface
 from utils import imprimir_inicio
 
+# Definir demo en el ámbito global
+demo = crear_interface()
+
 if __name__ == "__main__":
+    # Si se ejecuta localmente, lanza el servidor en el puerto especificado
     port = int(os.environ.get("PORT", 7860))
-    # server_name="0.0.0.0" hace que acepte conexiones externas
     demo.launch(server_name="0.0.0.0", server_port=port)
 
 def main():
