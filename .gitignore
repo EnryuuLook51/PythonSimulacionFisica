@@ -8,3 +8,4 @@ venv/
 .Python
 *.mp4
 *.log
+venv/
