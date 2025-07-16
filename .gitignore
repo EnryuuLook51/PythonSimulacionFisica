@@ -1,6 +1,7 @@
 # Archivos y carpetas generados
 animations/
 __pycache__/
+venv/
 *.pyc
 *.pyo
 *.pyd
