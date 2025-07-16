@@ -1,0 +1,4 @@
+numpy>=1.23.0
+matplotlib>=3.5.0
+gradio>=3.0.0
+ffmpeg-python>=0.2.0
